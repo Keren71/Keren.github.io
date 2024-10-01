@@ -1,0 +1,223 @@
+ body {
+    background-image: linear-gradient(to right, #8BC34A, #8BC34A);
+    background-image: radial-gradient(circle, #8BC34A, #8BC34A, #8BC34A);
+    background-size: cover;
+    background-position: center;
+}
+
+
+   * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav #logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.save_pic {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.save_pic h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.save_pic p {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.iconss:nth-child(2) {
+    margin-right: 20px; 
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.feature {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #2d2c2c;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 1 px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 1px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+.feature-icon {
+    font-size:20px;
+}
+
+.burger {
+    visibility:hidden; 
+}
+  @media only screen and (max-width: 768px) {
+    nav ul {
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 20px;
+    }
+    nav .openMenu{
+      display: block;
+    }
+    nav .mainMenu li a:hover{
+        background:none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+
+    }
+    .icons i{
+        display: inlinr-block;
+        padding:12px;
+    }
+    
+}
+@media only screen and (max-width: 576px) {
+    .container {
+      padding: 10px; 
+    }
+    .burger {
+        visibility: visible;
+        display: block; 
+    }
+  }
+  
+  .footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 40px 0; 
+    text-align: center; 
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto; 
+}
+
+.footer-links {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.quick-links, .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li, .contact-info li {
+    margin-bottom: 10px; 
+}
+
+.quick-links a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.contact-info li {
+    font-size: 14px; 
+}
+
+.copyright {
+    font-size: 12px; 
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/* burger  */
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .closeMenu{
+ visibility: hidden;
+}
+nav .closeMenu .mainMenu , .icons i{
+ font-size: 2rem;
+ display: none;
+ cursor: pointer;
+}
+
+.fa-facebook:hover{color: rgb(0, 110, 255);}
+.fa-twitter:hover{color: rgb(86, 154, 243);}
+.fa-instagram:hover{color: rgb(255, 0, 191);}
+.fa-github:hover{color: rgb(255, 123, 0);}
+
